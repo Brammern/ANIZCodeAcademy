@@ -9,7 +9,7 @@ public class CatTestWithScanner {
 
         // Spørg hvor mange katte der skal laves
         System.out.print("How many cats would you like to register? ");
-        int numberOfCats = scanner.nextInt();
+        int numberOfCats = scanner.nextInt();;
         scanner.nextLine(); // "spiser" linjeskift efter nextInt()
 
         // Opret array af katte

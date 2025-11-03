@@ -55,4 +55,10 @@ class DemigodTest {
         // Gudeforælder skal altid være sat → ikke null
         assertNotNull(percy.getGodParent());
     }
+
+    @Test
+    void testSilenaEligible() {
+        Demigod silena = new Demigod("Silena", "Nihao",8);
+        assertFalse(silena.isEligibleForQuest());
+    }
 }
