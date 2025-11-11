@@ -27,7 +27,14 @@ public class PrintTrae {
         // Udskriv stamtræet
         frederik.printTree("");
         System.out.println("Antal personer i træet: " + frederik.countDescendants());
+        // Prints out the count of women in the tree
+        System.out.println("Antal kvinder i træet: " + frederik.womenInTree() + "\n");
+
         joachim.printTree("");
-        System.out.println("Antal personer i træet: " + frederik.countDescendants());
+        System.out.println("Antal personer i træet: " + joachim.countDescendants());
+        // Prints out the count of women in the tree
+        System.out.println("Antal kvinder i træet: " + joachim.womenInTree() + "\n");
+
+
     }
 }

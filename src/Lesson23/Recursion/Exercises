@@ -1,7 +1,19 @@
 🧠 Forståelse af rekursion:
 
 1.Hvad er forskellen på en rekursiv og en iterativ løsning?
+Forskellen er at med en rekursiv løsning kalder du metoderne i samme funktion. Altså du laver udregningen i samme
+funktion.
+
+
 2.Hvorfor er det vigtigt at have en base case i en rekursiv funktion?
+Lidt ligesom et loop kan rekursion også kører "uendeligt", og dette er for at forhindre dette.
+En base case er til scenarier hvor input ikke ville give mening i en funktion så som n - 1 hvor n er 0.
+Dette takles typisk ved et if statement hvor n skal være større eller lig med et tal, ellers returner den bare n.
+
 3.Hvad sker der, hvis base case mangler eller er forkert?
+Beskrevet overfor.
+
 4.Hvordan kan vi visualisere de rekursive kald – fx med en kaldestak?
+?
+
 5.Hvor mange gange bliver fibonacci(2) kaldt, når vi beregner fibonacci(5)?

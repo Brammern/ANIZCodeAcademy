@@ -31,9 +31,21 @@ class Person {
     }
 
     public int countDescendants() {
-        int count = 1; // Tæl personen selv
+        int count = 0; // Tæl personen selv
         for (Person child : children) {
+            count++;
             count += child.countDescendants(); // Rekursivt tilføj børnenes antal
+        }
+        return count;
+    }
+
+    public int womenInTree() {
+        int count = 0;
+        for (Person child : children) {
+            if (child.getGender() == '♀') {
+                count++;
+            }
+            count += child.womenInTree();
         }
         return count;
     }
